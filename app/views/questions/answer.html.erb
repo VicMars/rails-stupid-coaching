@@ -1,5 +1,9 @@
-<h1>Questions#answer</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
+<div class="container">
 
-<h2><%= @question %></h2>
-<p><%= @answer %></p>
+<h1>Questions</h1>
+<p class="question"><%= @question %>
+<br>- You</p>
+<p class="answer"><%= @answer %><br>- Your coach</p>
+<p><%= link_to "Ask me anything", "/ask", :style=> 'color: #3379B8;''text-decoration: none;'%>
+</p>
+</div>
